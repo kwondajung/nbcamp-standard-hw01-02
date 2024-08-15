@@ -1,11 +1,16 @@
 import React from 'react';
+import Content from './components/Content';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
+  const title = 'My Website';
+  const year = '2024';
   return (
     <div>
-      <h1>My Website</h1>
-      <p>Welcome to my website!</p>
-      <footer>© 2024 My Website</footer>
+      <Header title={title} />
+      <Content />
+      <Footer year={year} />
     </div>
   );
 }
